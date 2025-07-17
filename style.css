@@ -1,0 +1,721 @@
+ @font-face {
+     font-family: "Helvetica Now Text Medium";
+     src: url("/fonts/HelveticaNowText-Medium.woff2") format("woff2");
+ }
+
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ body {
+     font-family: "Helvetica Now Text Medium", Helvetica, Arial, sans-serif;
+     background-color: rgb(245, 245, 245);
+ }
+
+ .navbar {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 10px 30px;
+     background-color: white;
+     border-bottom: 1px solid #eee;
+ }
+
+ .logo img {
+     margin-left: 12px;
+     height: 25px;
+ }
+
+ .menu {
+     margin-left: 150px;
+     display: flex;
+     gap: 22px;
+     font-size: 16px;
+     font-weight: 300;
+ }
+
+ .menu a {
+     text-decoration: none;
+     color: black;
+ }
+
+ .right-section {
+     display: flex;
+     align-items: center;
+     gap: 30px;
+ }
+
+ .search-box {
+     display: flex;
+     width: 170px;
+     align-items: center;
+     background-color: #f2f2f2;
+     padding: 9px 10px;
+     border-radius: 25px;
+ }
+
+ .search-box input {
+     border: none;
+     background: transparent;
+     font-family: Helvetica, Arial, sans-serif;
+     outline: none;
+     margin-left: 8px;
+     font-size: 16px;
+ }
+
+ .icons i {
+     font-size: 22px;
+     color: rgb(49, 49, 49);
+     cursor: pointer;
+     margin-right: 20px;
+ }
+
+ .top-navbar {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     background-color: #f5f5f5;
+     padding: 8px 36px;
+     font-size: 13px;
+     font-weight: 700;
+     letter-spacing: 0px;
+ }
+
+ .top-navbar .logo img {
+     height: 20px;
+ }
+
+ .top-navbar .links {
+     display: flex;
+     gap: 15px;
+     align-items: center;
+ }
+
+ .top-navbar .links a {
+     text-decoration: none;
+     color: black;
+     padding: 0 5px;
+     position: relative;
+ }
+
+ .top-navbar .links a:not(:last-child)::after {
+     content: "|";
+     position: absolute;
+     right: -10px;
+     color: #000000;
+ }
+
+ .maintext {
+     text-align: center;
+     margin-top: 15px;
+     font-family: Helvetica, Arial, sans-serif;
+     font-size: 12px;
+     letter-spacing: 1px;
+     text-decoration: none;
+ }
+
+ .maintext .hT {
+     font-size: 18px;
+     margin-bottom: 4px;
+ }
+
+ .maintext .hN a {
+     margin-top: 10px;
+     font-weight: 700;
+     color: #000000;
+ }
+
+ .slider {
+     width: 100%;
+     height: 600px;
+     background-color: rgb(255, 255, 255);
+     background-image: url(/Nike/images/main1.png);
+     background-repeat: no-repeat;
+     background-size: cover;
+     object-fit: contain;
+ }
+
+ .banner {
+     text-align: center;
+     margin-top: 30px;
+     background-color: rgb(245, 245, 245);
+ }
+
+ .banner h1 {
+     font-size: 70px;
+     font-weight: 900;
+     letter-spacing: -3px;
+     color: #000;
+ }
+
+ .banner p {
+     font-size: 16px;
+     color: #000000;
+     margin-bottom: 30px;
+ }
+
+ .banner .cta-button {
+     padding: 12px 24px;
+     background-color: #000;
+     color: #fff;
+     border: none;
+     border-radius: 30px;
+     font-size: 16px;
+     cursor: pointer;
+     transition: background 0.3s;
+ }
+
+ .banner .cta-button:hover {
+     background-color: #333;
+ }
+
+
+ .banner .dot {
+     display: inline-block;
+     width: 8px;
+     height: 8px;
+     background-color: #333;
+     border-radius: 50%;
+     margin: 0 4px;
+     opacity: 0.4;
+ }
+
+ .banner .dot.active {
+     opacity: 1;
+ }
+
+ .shoesCardSection p {
+     font-size: 24px;
+     margin-left: 40px;
+     margin-bottom: 10px;
+     letter-spacing: 1px;
+     font-weight: 600;
+     font-family: Helvetica, Arial, sans-serif;
+
+ }
+
+ .shoesCard {
+     margin-left: 2.5%;
+     width: 95%;
+     justify-content: center;
+     height: 500px;
+     background-color: rgb(245, 245, 245);
+     background-image: url(/Nike/images/bootCard.png);
+     background-repeat: no-repeat;
+     background-size: cover;
+     object-fit: contain;
+ }
+
+ .hero {
+     padding: 80px 40px;
+     max-width: 600px;
+ }
+
+ .hero .sub-heading {
+     color: #fff;
+     font-size: 14px;
+     letter-spacing: 1px;
+     font-weight: 600;
+ }
+
+ .hero h1 {
+     color: #fff;
+     font-size: 64px;
+     font-weight: 900;
+     line-height: 1.1;
+     margin-bottom: 10px;
+ }
+
+ .hero p {
+     font-size: 14px;
+     color: #fff;
+     max-width: 450px;
+     margin-bottom: 30px;
+     margin-left: -1px;
+ }
+
+ .hero button {
+     padding: 12px 24px;
+     font-size: 16px;
+     background-color: white;
+     color: black;
+     border: none;
+     border-radius: 25px;
+     cursor: pointer;
+     font-weight: 600;
+     transition: background 0.3s ease;
+ }
+
+ .hero button:hover {
+     background-color: #f2f2f2;
+ }
+
+
+ .featuredSection p {
+     font-size: 24px;
+     margin-top: 70px;
+     margin-left: 40px;
+     margin-bottom: 20px;
+     letter-spacing: 1px;
+     font-weight: 600;
+     font-family: Helvetica, Arial, sans-serif;
+
+ }
+
+ .featured {
+     display: flex;
+ }
+
+ .cal {
+     width: 50%;
+     height: 600px;
+     background-color: aquamarine;
+     position: relative;
+
+ }
+
+ .cal img {
+     object-fit: fill;
+     width: 100%;
+     height: 600px;
+ }
+
+ .hero2 {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     color: #fff;
+     padding: 40px;
+     box-sizing: border-box;
+     display: flex;
+     flex-direction: column;
+     justify-content: flex-end;
+     height: 100%;
+ }
+
+ .hero2 .sub-text {
+     color: #fff;
+     font-size: 14px;
+     letter-spacing: 1px;
+     font-weight: 600;
+     margin-bottom: -65px;
+ }
+
+ .hero2 p {
+     font-size: 22px;
+     font-weight: 50;
+     color: #fff;
+     margin-bottom: 20px;
+     margin-left: -1px;
+ }
+
+ .hero2 button {
+     padding: 12px;
+     width: 70px;
+     font-size: 13px;
+     background-color: white;
+     color: black;
+     border: none;
+     border-radius: 25px;
+     cursor: pointer;
+     font-weight: 600;
+     transition: background 0.3s ease;
+ }
+
+
+ .video {
+     width: 95%;
+     margin-left: 2.5%;
+     height: 800px;
+     background-image: url(/Nike/images/videoref.png);
+     object-fit: cover;
+ }
+
+ .video video {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+     display: block;
+ }
+
+ .VideoSection p {
+     font-size: 24px;
+     margin-top: 70px;
+     margin-left: 40px;
+     margin-bottom: 20px;
+     letter-spacing: 1px;
+     font-weight: 600;
+     color: #000000;
+     font-family: Helvetica, Arial, sans-serif;
+
+ }
+
+
+
+ .hero3 {
+     padding: 40px 40px;
+     margin: 0 auto;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     text-align: center;
+ }
+
+ .hero3 .sub-heading {
+     color: #000000;
+     font-size: 14px;
+     letter-spacing: 1px;
+     font-weight: 600;
+ }
+
+ .hero3 h1 {
+     color: #000000;
+     font-size: 64px;
+     font-weight: 900;
+     line-height: 1.1;
+     margin-bottom: 10px;
+ }
+
+ .hero3 button {
+     padding: 12px 24px;
+     font-size: 16px;
+     background-color: rgb(0, 0, 0);
+     color: rgb(255, 255, 255);
+     border: none;
+     border-radius: 25px;
+     cursor: pointer;
+     font-weight: 600;
+     transition: background 0.3s ease;
+ }
+
+ .hero3 button:hover {
+     background-color: #797979;
+ }
+
+ .shoesSlider p {
+     font-size: 24px;
+     margin-top: 70px;
+     margin-left: 40px;
+     margin-bottom: 20px;
+     letter-spacing: 1px;
+     font-weight: 600;
+     color: #000000;
+     font-family: Helvetica, Arial, sans-serif;
+
+ }
+
+ .carousel-wrapper {
+     display: flex;
+     align-items: center;
+     position: relative;
+     width: 100%;
+     overflow: hidden;
+     padding: 1rem;
+ }
+
+ .carousel-wrapper ::-webkit-scrollbar {
+     display: none;
+ }
+
+ .carousel {
+     display: flex;
+     gap: 1.2rem;
+     overflow-x: auto;
+     scroll-behavior: smooth;
+ }
+
+ .card {
+     min-width: 300px;
+ }
+
+ .card img {
+     width: 100%;
+     border-radius: 10px;
+ }
+
+ .carousel-btn {
+     background: white;
+     border: none;
+     font-size: 1rem;
+     cursor: pointer;
+     width: 40px;
+     height: 40px;
+     z-index: 2;
+     color: #333;
+     border-radius: 50%;
+     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+     position: absolute;
+     top: 50%;
+     transform: translateY(-50%);
+ }
+
+ .carousel-btn.prev {
+     left: 4.5rem;
+ }
+
+ .carousel-btn.next {
+     right: 4.5rem;
+ }
+
+ .carousel-wrapper2 {
+     display: flex;
+     align-items: center;
+     position: relative;
+     width: 98%;
+     overflow: hidden;
+     margin-right: 20px;
+     margin-left: 20px;
+ }
+
+ .shoesSlider2 {
+     margin-top: 80px;
+ }
+
+ .carousel2 {
+     display: flex;
+     gap: 1.2rem;
+     overflow-x: auto;
+     scroll-behavior: smooth;
+
+ }
+
+ .card2 {
+     min-width: 500px;
+     background: #fff;
+     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.10);
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     overflow: hidden;
+     margin: 1px;
+     z-index: 1;
+ }
+
+ .img-wrap {
+     width: 100%;
+     background: #f5f5f5;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     padding: 24px 0 0 0;
+ }
+
+ .img-wrap img {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+     border-radius: 12px;
+     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+ }
+
+ .details {
+     width: 100%;
+     padding: 18px 20px 24px 20px;
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+     background: rgb(255, 255, 255);
+ }
+
+ .details .name {
+     font-size: 1rem;
+     margin-bottom: 6px;
+     color: #222;
+ }
+
+ .details .model {
+     font-size: 0.98rem;
+     color: #666;
+     margin-bottom: 8px;
+ }
+
+ .details .rate {
+     font-size: 1rem;
+     color: #111;
+ }
+
+
+ .carousel-btn2 {
+     background: rgb(207, 205, 205);
+     border: none;
+     font-size: 1rem;
+     cursor: pointer;
+     margin-right: 10px;
+     width: 40px;
+     height: 40px;
+     color: #333;
+     border-radius: 50%;
+ }
+
+ .carousel-btn2-sn {
+     background: rgba(255, 255, 255, 0);
+     border: none;
+     font-size: 15px;
+     font-weight: 600;
+     cursor: pointer;
+     width: 60px;
+     height: 40px;
+     color: #000000;
+ }
+
+ .btn {
+     display: flex;
+     align-items: center;
+     width: 100%;
+     justify-content: space-between;
+     margin-right: 0px;
+     margin-bottom: 25px;
+     padding: 0 20px;
+     position: relative;
+ }
+
+ .btn .carousel-btn2 {
+     float: right;
+ }
+
+ .btn p {
+     font-size: 24px;
+     margin: 0 20px 0 40px;
+     letter-spacing: 1px;
+     font-weight: 600;
+     color: #000000;
+     font-family: Helvetica, Arial, sans-serif;
+
+ }
+
+ .carousel-btn2.prev {
+     left: 4.5rem;
+ }
+
+ .carousel-btn2.next {
+     right: 4.5rem;
+ }
+
+
+ .shoesSlider3 {
+     margin-top: 90px;
+     margin-bottom: 120px;
+     width: 95%;
+     margin-left: 2.5%;
+ }
+
+
+ .card3 {
+     min-width: 500px;
+     background: #fff;
+     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.10);
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     overflow: hidden;
+     margin: 1px;
+     z-index: 1;
+ }
+
+ .img-wrap3 {
+     width: 550px;
+     height: 370px;
+     background: #f5f5f5;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     padding: 24px 0 0 0;
+     position: relative;
+ }
+
+ .img-wrap3 img {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+     border-radius: 12px;
+ }
+
+ .img-wrap3 .hero2 .hb2 {
+     min-width: 25%;
+     margin-left: 10px;
+     padding: 12px 0;
+     background-color: rgb(255, 255, 255);
+     color: rgb(0, 0, 0);
+     border-radius: 25px;
+     cursor: pointer;
+     font-weight: 600;
+     transition: background 0.3s ease;
+     text-align: center;
+
+ }
+
+ .img-wrap3 .hero2 button:hover {
+     background: #cdcaca;
+ }
+
+.footer {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.footercon {
+    display: flex;
+    margin-left: -250px;
+    flex-wrap: wrap;
+    min-height: 50px;
+    background-color: transparent;
+}
+
+.list1 {
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    min-height: 50px;
+    font-size: 6px;
+    margin-left: 350px;
+    
+}
+
+.list1 li {
+    font-size: 8px;
+    margin: 7px -60px;
+    list-style-type: none;
+    display: flex;
+
+}
+
+.list1 li a {
+    color: #797979;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+li a {
+    font-size: 8px;
+    text-align: center;
+}
+
+.copyRight {
+    margin-left: 40px;
+    margin-top: 40px;
+    margin-bottom: 100px;
+    display: flex;
+    color: #797979;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 600;
+    
+}
+
+.copyRight p {
+    margin-right: 20px;
+}
+.copyRight a {
+    color: #797979;
+    text-decoration: none;
+}
+hr{
+    width: 95%;
+    margin-left: 2.5%;
+    margin-bottom: 40px;
+}
