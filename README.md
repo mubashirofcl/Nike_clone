@@ -1,7 +1,7 @@
 <h2 align="center">👟 Nike Website Clone</h2>
 
 <h4 align="center">
-  A static front-end replica of the Nike India website using HTML, CSS, and JavaScript.
+  A static front-end replica of the Nike India website using HTML, CSS.
 </h4>
 
 <p align="center">
@@ -18,7 +18,7 @@ It includes key UI sections such as:
 
 - Multi-level navbar
 - Hero section
-- Product carousels
+- Product card
 - Featured sections
 - Videos
 - Custom footer
@@ -31,7 +31,6 @@ All images, icons, and styles are custom built or cloned from the original layou
 
 - ✅ HTML5 – Semantic Structure  
 - ✅ CSS3 – Flexbox, Grid, Media Queries  
-- ✅ JavaScript – Carousel, Scrolling, Event Handling  
 - ✅ Font Awesome – Icons  
 
 ---
@@ -39,7 +38,7 @@ All images, icons, and styles are custom built or cloned from the original layou
 ## 💡 Features
 
 - 🎯 **Multi-section navigation bars**
-- 🎞️ **Image sliders** with JS-based carousel buttons
+- 🎞️ **Image cards**
 - 🏷️ **Product showcase cards** with prices and types
 - 📹 **Autoplay background video** for trending section
 - 👟 **Shop by sport** and **new arrival sliders**
